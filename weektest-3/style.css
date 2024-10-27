@@ -1,0 +1,97 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* The .container class uses Flexbox to display the product list and cart side by side.*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*These sections have borders, padding, background colors, and box shadows to distinguish them visually. */
+.product-list {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    background-color: #e3f2fd; /* Light blue background for product section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* These sections have borders, padding, background colors, and box shadows to distinguish them visually. */
+.cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    background-color: #fffde7; /* Light yellow background for cart section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list h2, .cart h2 {
+    color: #4A90E2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Item Styling and Hover Effects: Each product and cart item has padding, a border-bottom, and hover effects for interactivity. */
+.product-item, .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #a1a1a1; /* Light greyish background for product and cart items */
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.product-item:hover, .cart-item:hover {
+    background-color: #e1e6f9; /* Highlighted background on hover for better interactivity */
+}
+
+.product-item:last-child, .cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Adds styling and hover effects to buttons*/
+button {
+    background-color: #4A90E2;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Quantity Display */
+.product-item span, .cart-item span {
+    font-weight: bold;
+}
+
+.product-item button + span {
+    margin: 0 10px;
+}
+
+/* Cart Total Price */
+.cart h3 {
+    text-align: right;
+    color: #4A90E2;
+    margin-top: 20px;
+}
+
+
+
