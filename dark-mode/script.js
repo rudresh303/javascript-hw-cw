@@ -1,21 +1,21 @@
 var toggled = false; 
 
-var headT = document.getElementsByTagName("h1")[0];
-var bTag = document.getElementsByTagName("body")[0];
-var circleT = document.getElementById("circleT");
+var hTag = document.getElementsByTagName("h1")[0];
+var bodyTag = document.getElementsByTagName("body")[0];
+var circle = document.getElementById("circle");
 
-document.getElementById("toggle").onclick = function () {
+document.getElementById("toggle-container").onclick = function () {
         
     if(!toggled) {
-        headT.classList.add("color-white");
-        bTag.classList.add("bck-color-black");
-        circleT.classList.add("dark-mode")
+        hTag.classList.add("color-white");
+        bodyTag.classList.add("bck-color-black");
+        circle.classList.add("dark-mode")
 
         toggled = true;
     } else {
-        headT.classList.remove("color-white");
-        bTag.classList.remove("bck-color-black");
-        circleT.classList.remove("dark-mode")
+        hTag.classList.remove("color-white");
+        bodyTag.classList.remove("bck-color-black");
+        circle.classList.remove("dark-mode")
 
         toggled = false;
     }
