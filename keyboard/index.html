@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keycode Keyboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Press any key to see the keycode</h1>
+    <div id="display">
+      <p class="key">Key: <span id="keyPressed">None</span></p>
+      <p class="keycode">Key Code: <span id="keyCode">0</span></p>
+      <p class="combination">Combination: <span id="comboKeys">None</span></p>
+    </div>
+    <div id="history">
+      <h2>Key Press History</h2>
+      <ul id="keyHistoryList"></ul>
+    </div>
+  </div>
+  <audio id="keypressSound" src="keypress.mp3"></audio> <!-- Add sound file -->
+  <script src="./script.js"></script>
+</body>
+</html>
+
