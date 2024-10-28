@@ -4,7 +4,7 @@ var hTag = document.getElementsByTagName("h1")[0];
 var bodyTag = document.getElementsByTagName("body")[0];
 var circle = document.getElementById("circle");
 
-document.getElementById("toggle-container").onclick = function () {
+document.getElementById("toggle-container").onclick = function(){
         
     if(!toggled) {
         hTag.classList.add("color-white");
