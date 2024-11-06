@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puma UI Mockup</title>
+  
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Header styling */
+    .header {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header-icons img {
+      width: 20px;
+      height: 20px;
+    }
+
+   /* Promo Banner */
+.promo-banner {
+  background-color: #394aa8; /* Matching the purple background */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.promo-banner p {
+  margin: 5px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.promo-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 5px 0;
+}
+
+.promo-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.promo-links span {
+  color: #ffffff;
+}
+
+
+    /* Main Content */
+    .main-content {
+      background: url('./32f16efd520940f1b163cb907f2a58f4fe051313.png') no-repeat right center;
+      background-size: cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .main1-content{
+        background: url('./download3.jpg') no-repeat right center;
+      background-size: cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      color: #fff;
+      padding-left: 30px;
+      margin-top: 40px;
+    }
+
+    .main2-content{
+        background: url('./download.jpg') no-repeat right center;
+      background-size: cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px;
+      color: #fff;
+      padding-right: 60px;
+      margin-top: 40px;
+    }
+
+
+    .text-content {
+     margin-left: 50px;
+      max-width: 400px;
+      justify-content: center;
+      line-height: 1.5;
+    }
+
+    .text-content h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .text-content p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .button1-group {
+     margin-top: 10px;
+      gap: 20px;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button-group button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #000; /* Adjust as needed */
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 50px; /* Adjust the logo size as needed */
+  margin-right: 20px; /* Space between logo and nav links */
+  background-color: white;
+  border-radius: 5px; 
+  opacity: 0.6;
+  
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 15px; /* Space between each link */
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ccc; /* Hover effect */
+}
+
+.header-icons a img {
+  width: 24px; /* Adjust size as needed */
+  background-color: #ffffff; /* Adds a white background */
+  padding: 4px; /* Adds some padding to give space around the icon */
+  border-radius: 50%; /* Makes the background circular, if desired */
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111; /* Dark background */
+}
+
+/* Left Section (Logo + Links) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .logo {
+  width: 40px; /* Adjust logo size */
+  margin-right: 20px; /* Space between logo and links */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Right Section (Search + Icons) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search img {
+  width: 16px; /* Adjust search icon size */
+  margin-right: 5px;
+}
+
+.icon {
+  width: 20px; /* Adjust icons size */
+  filter: invert(1); /* Makes black icons white */
+}
+
+
+/* hh */
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: linear-gradient(135deg, #FF6B00, #FFA500);
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem;
+    font-weight: normal;
+}
+
+.banner button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #e0e0e0;
+}
+
+
+.palermo-section {
+    display: flex;
+    background-color: #cdae95;
+    padding: 2rem;
+    align-items: center;
+    height: 90vh;
+}
+
+.palermo-text {
+    flex: 1;
+    color: #333;
+    padding: 1rem;
+}
+
+.palermo-text h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.palermo-text p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.palermo-text .buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-bottom: 10px;
+}
+
+.palermo-images {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.palermo-images .car-window {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.palermo-images .person-on-car {
+    width: 110%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 400px;
+}
+
+
+/* Palermo Playbook Section */
+.palermo-playbook {
+    text-align: center;
+    margin: 2rem 0;
+    margin-top: 100px;
+}
+
+.palermo-playbook h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.palermo-playbook p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.playbook-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.playbook-card {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playbook-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.playbook-card img {
+    width: 100%;
+    height: auto;
+    image-rendering: auto;
+}
+
+.playbook-card .card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.playbook-card button {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.playbook-card button:hover {
+    background-color: #333;
+}
+
+.palermo-playbook h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000; /* Set to black or a contrasting color */
+    margin-bottom: 0.5rem;
+    display: block; /* Ensures it renders as a block element */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.highlights-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlight-item {
+    position: relative;
+    width: 250px;
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.highlight-label {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #ccc;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.footer-section ul li:hover {
+    color: #fff;
+}
+
+.social-icons span {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-icons span:hover {
+    color: #ccc;
+}
+
+.app-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.app-icon {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.app-icon:hover {
+    background-color: #333;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.footer-bottom .country {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .country span {
+    margin-right: 5px;
+}
+
+.payment-methods img {
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.footer-bottom a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #222;
+            color: #ccc;
+            font-family: Arial, sans-serif;
+        }
+
+        .country {
+            display: flex;
+            align-items: center;
+            border: 1px solid #444;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .country span {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+
+        .payment-methods img {
+            margin-right: 10px;
+            width: 40px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="#"><img src="./puma-logo.png" alt="Puma Logo" class="logo"></a>
+      <nav class="nav-links">
+        <a href="#">New</a>
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Motorsport</a>
+        <a href="#">Collaborations</a>
+        <a href="#">Sports</a>
+        <a href="#">Sale</a>
+        <a href="#">Palermo</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <div class="search">
+        <img src="./search.png" alt="Search Icon">
+        <span>SEARCH</span>
+      </div>
+      <a href="#"><img src="./heart.png" alt="Wishlist" class="icon"></a>
+      <a href="#"><img src="./cart.png" alt="Cart" class="icon"></a>
+      <a href="#"><img src="./person.png" alt="Profile" class="icon"></a>
+    </div>
+  </header>
+  
+
+  <!-- Promo Banner -->
+ <!-- Promo Banner -->
+<div class="promo-banner">
+    <p>EXTRA 15% OFF ON ORDERS ABOVE ₹3999*</p>
+    <div class="promo-links">
+      <a href="#">FOR HIM</a>
+      <span>|</span>
+      <a href="#">FOR HER</a>
+      <span>|</span>
+      <a href="#">FOR KIDS</a>
+    </div>
+    <p>Auto-applied at checkout | *Exclusions apply</p>
+  </div>
+  
+
+  <!-- Main Content -->
+  <section class="main-content">
+    <div class="text-content">
+      <h1>NEW ARRIVALS</h1>
+      <p>WORN BY VIRAT KOHLI</p>
+      <div class="button-group">
+        <button>SHOP NOW</button>
+        <button>CURATED LOOKS</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner">
+    <h1>LOWEST PRICE OF THE YEAR</h1>
+    <p>IT'S A NOW OR NEVER KINDA DEAL</p>
+    <button>SHOP NOW</button>
+</div>
+
+
+<div class="palermo-section">
+    <div class="palermo-text">
+        <h2>PALERMO</h2>
+        <p>REWRITE THE CLASSICS</p>
+        <div class="buttons">
+            <button>SHOP NOW</button>
+            <button>EXPLORE STYLE GUIDE</button>
+           
+        </div>
+        <video class="car-window" autoplay loop muted playsinline height="400px" width="600px">
+            <source src="./2269b9809fbb0cc903469eabd884b3de0ac70c80.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+    </div>
+    <div class="palermo-images">
+      
+        <img src="./download (1).jpg" alt="Person on Car" class="person-on-car" >
+    </div>
+</div>
+
+<div class="palermo-playbook">
+    <h2>PALERMO PLAYBOOK</h2>
+    <p>Style 'em your way, every day</p>
+    <div class="playbook-cards">
+        <div class="playbook-card">
+            <img src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAaABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYEBQcI/8QAKBAAAgEDAwEIAwAAAAAAAAAAAQIDAAQFBhEhEgcTFDEyQlFhNEGB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAHhEAAgICAgMAAAAAAAAAAAAAAQIAEQMxQVETIWH/2gAMAwEAAhEDEQA/AJ+N7YrvIQ21peL3E0jgiaM+oA+VX+lO01snqN7G9nRFiV2Gw2D/AAKynM4jH4G0sTFM3ikRpVL/AL+qpMY0F3qTH3UMxgV2BlU8BQfMb/FZCige9bhQlCUcXevk6v0zn/H4sT3zwRSl2AUH278GisR1Ct4cm4xbuLRQAnTJwfuih507lON71FzU1nJmLgXcpCgL0qo9tK0imOdUZVLJsR1cA09TfjNSzdqpm5AP8qJ1NW9Sytb0dwneNJ1bc7Gio0XoFFE41PEQyuOZ/9k=" alt="Streetwear Staple">
+            <p class="card-title">STREETWEAR STAPLE</p>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="playbook-card">
+            <img src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAaABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAgGBwEEBf/EACgQAAEDBAEDAgcAAAAAAAAAAAECAwQABQYRIRMxQQdhEhUiJDJRcf/EABgBAQADAQAAAAAAAAAAAAAAAAMAAQIE/8QAHBEAAgICAwAAAAAAAAAAAAAAAAECIQMRBBIT/9oADAMBAAIRAxEAPwBaY9rU/wDD0gVEk8e1TfCTKjRFxth1lWyOmeUn3rSw20S71fI8GCrpyFE/UvgJT5qyrxgzuE21hTbwkCQ8A4sDWt0U22jr4kMcpr0ekRNie+sKL6tOBRB0KK5Lygt1auqsbUeP1zRWOqYTd0We3nuItuF21wkx3wQlLoRo9+am1yyPF7jbmPmc2OuG8vaQs+QKVdjz/aytROwSdDsKUPdDDybl6cpdKfszrjvRS2PfnRUKP//Z" alt="Night-Out Looks">
+            <p class="card-title">NIGHT-OUT LOOKS</p>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="playbook-card">
+            <img src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAaABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAgGBwEEBf/EACgQAAEDBAEDAgcAAAAAAAAAAAECAwQABQYRIRMxQQdhEhUiJDJRcf/EABgBAQADAQAAAAAAAAAAAAAAAAMAAQIE/8QAHBEAAgICAwAAAAAAAAAAAAAAAAECIQMRBBIT/9oADAMBAAIRAxEAPwBaY9rU/wDD0gVEk8e1TfCTKjRFxth1lWyOmeUn3rSw20S71fI8GCrpyFE/UvgJT5qyrxgzuE21hTbwkCQ8A4sDWt0U22jr4kMcpr0ekRNie+sKL6tOBRB0KK5Lygt1auqsbUeP1zRWOqYTd0We3nuItuF21wkx3wQlLoRo9+am1yyPF7jbmPmc2OuG8vaQs+QKVdjz/aytROwSdDsKUPdDDybl6cpdKfszrjvRS2PfnRUKP//Z" alt="Playful Outings">
+            <p class="card-title">PLAYFUL OUTINGS</p>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="playbook-card">
+            <img src="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAaABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAgGBwEEBf/EACgQAAEDBAEDAgcAAAAAAAAAAAECAwQABQYRIRMxQQdhEhUiJDJRcf/EABgBAQADAQAAAAAAAAAAAAAAAAMAAQIE/8QAHBEAAgICAwAAAAAAAAAAAAAAAAECIQMRBBIT/9oADAMBAAIRAxEAPwBaY9rU/wDD0gVEk8e1TfCTKjRFxth1lWyOmeUn3rSw20S71fI8GCrpyFE/UvgJT5qyrxgzuE21hTbwkCQ8A4sDWt0U22jr4kMcpr0ekRNie+sKL6tOBRB0KK5Lygt1auqsbUeP1zRWOqYTd0We3nuItuF21wkx3wQlLoRo9+am1yyPF7jbmPmc2OuG8vaQs+QKVdjz/aytROwSdDsKUPdDDybl6cpdKfszrjvRS2PfnRUKP//Z" alt="The Festive Edit">
+            <p class="card-title">THE FESTIVE EDIT</p>
+            <button>SHOP NOW</button>
+        </div>
+    </div>
+
+
+    <section class="main1-content">
+        <div class="text1-content">
+            <h2 style="color: white;">FENTY X PUMA</h2>
+            <h5 style="font-size: 20px;">AVANTI BY RIHANA</h5>
+           
+          <div class="button1-group">
+            <button style="background-color: white; padding: 10px;">SHOP NOW</button>
+           
+          </div>
+        </div>
+      </section>
+
+
+      <section class="main2-content">
+        <div class="text2-content">
+            <h2 style="color: white;">A$AP ROCKY X PUMA</h2>
+            <h4>DROPPING NOVEMBER 7TH</h4>
+            
+           
+          <div class="button1-group">
+            <button style="background-color: white; padding: 10px;">EXPLORE COLLECTION</button>
+            <button style="background-color: white; padding: 10px;">SIGNUP NOW</button>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="container">
+        <div class="highlights-row">
+            <div class="highlight-item">
+                <img src="./download4.jpg" alt="MB.04 1LOVE">
+                <div class="highlight-label">MB.04 1LOVE</div>
+            </div>
+            <div class="highlight-item">
+                <img src="./download4.jpg" alt="Deviate 3 Marathon Series">
+                <div class="highlight-label">DEVIATE 3 MARATHON SERIES</div>
+            </div>
+            <div class="highlight-item">
+                <img src="./download4.jpg" alt="Softride">
+                <div class="highlight-label">SOFRIDE</div>
+            </div>
+            <div class="highlight-item">
+                <img src="./download4.jpg" alt="Lights Out Pack">
+                <div class="highlight-label">LIGHTS OUT PACK</div>
+            </div>
+        </div>
+
+        <h2>HIGHLIGHTS</h2>
+
+        <div class="highlights-row">
+            <div class="highlight-item">
+                <img src="./download5.jpg" alt="Puma Speedcat" height="300px">
+                <div class="highlight-label">PUMA SPEEDCAT</div>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="highlight-item">
+                <img src="./download5.jpg" alt="Winterwear"  height="300px">
+                <div class="highlight-label">WINTERWEAR</div>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="highlight-item">
+                <img src="./download5.jpg" alt="Puma X LMC"  height="300px">
+                <div class="highlight-label">PUMA X LMC</div>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="highlight-item">
+                <img src="./download5.jpg" alt="The Scribble Pack"  height="300px">
+                <div class="highlight-label">THE SCRIBBLE PACK</div>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>SUPPORT</h3>
+            <ul>
+                <li>Contact us</li>
+                <li>Promotions & Sale</li>
+                <li>Track Order</li>
+                <li>Shoe Care</li>
+                <li>Tech Glossary</li>
+                <li>Initiate Return / Exchange</li>
+                <li>Cookie Settings</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>ABOUT</h3>
+            <ul>
+                <li>Company</li>
+                <li>Corporate News</li>
+                <li>Press Center</li>
+                <li>Investors</li>
+                <li>Sustainability</li>
+                <li>Careers</li>
+                <li>Store Locator</li>
+                <li>PUMA Articles</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>STAY UP TO DATE</h3>
+            <div class="social-icons">
+                <span> <i class="fa fa-youtube-play" aria-hidden="true"></i></span> 
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+            </div>
+            <h3 style="margin-top: 10px;">EXPLORE</h3>
+            <div class="app-icons">
+                <div class="app-icon">APP</div>
+                <div class="app-icon">TRAC</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <!-- Country Section -->
+       
+        
+        <!-- Payment Methods Section -->
+        <div class="payment-methods">
+            <img src="https://in.puma.com/_next/static/assets/icons/payment-visa.svg#icon" alt="Visa">
+            <img src="https://in.puma.com/_next/static/assets/icons/payment-mastercard.svg#icon" alt="MasterCard">
+            <img src="https://in.puma.com/_next/static/assets/icons/payment-maestro.svg#icon" alt="American Express">
+            <img src="https://in.puma.com/_next/static/assets/icons/payment-upi.svg#icon" alt="RuPay">
+            <img src="https://in.puma.com/_next/static/assets/icons/payment-upi.svg#icon" alt="RuPay">
+            <img src="https://in.puma.com/_next/static/assets/icons/payment-maestro.svg#icon" alt="RuPay">
+        </div>
+        
+        <div class="country" style="width: auto;">
+            <img src="https://in.puma.com/_next/static/assets/icons/flag-in.svg#icon" height="20px" alt="Visa">INDIA
+        </div>
+        <!-- Text Section -->
+        <div class="footer-text">
+            <p>© PUMA INDIA LTD, 2024. ALL RIGHTS RESERVED.</p>
+            <p style="margin-top:10px ;"><a href="#">IMPRINT AND LEGAL DATA</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
