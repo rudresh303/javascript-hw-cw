@@ -3,620 +3,549 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-
-    <title>Document</title>
+    <title>PUMA.COM | Forever Faster</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://in.puma.com/assets/favicon-48x48.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="nav-bar-sticky" class="relative z-20 sticky top-[-1px]">
-      <nav aria-label="Main Navigation" class="bg-puma-black-100 text-white">
-        <div
-          class="h-16 lg:h-20 flex items-center justify-between mx-auto overflow-y-visible relative max-w-screen-3xl mobile:px-4 tablet:px-6 desktop:px-8"
-          data-test-id="main-nav-bar"
-        >
-          <div class="w-8 h-8">
-            <a
-              aria-disabled="false"
-              data-test-id="main-nav-home-link"
-              class="tw-hqslau tw-xbcb1y block"
-              data-link-name="puma-logo"
-              data-link-location="top-nav"
-              href="/in/en"
-            >
-              <svg
-                data-uds-child="icon"
-                aria-hidden="true"
-                focusable="false"
-                class="tw-yq8tfw tw-78qgvr w-[1em] h-[1em] tw-1h4nwdw tw-1jgcml9"
-              >
-                <use href="./puma-logo.svg#icon" xlink:href="./"></use></svg
-              ><span class="sr-only" data-uds-child="icon-label"
-                >PUMA.com</span
-              ></a
-            >
-          </div>
-
-          <ul
-            class="flex self-stretch flex-1 items-stretch overflow-x-hidden ml-5 hover:nav-fade-non-selected"
-            role="menubar"
-          >
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="New"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >New</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Women"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Women</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Men"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Men</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Kids"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Kids</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Motorsport"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Motorsport</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Collaborations"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Collaborations</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Sports"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Sports</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Sale"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Sale</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li
-              data-test-id="main-nav-category-item"
-              role="none"
-              class="group whitespace-nowrap flex"
-            >
-              <div
-                class="flex self-stretch hover:nav-fade-non-selected"
-                data-test-id="hoverable-nav-item"
-              >
-                <div class="flex-1 flex relative">
-                  <a
-                    aria-disabled="false"
-                    class="tw-j7066g tw-xbcb1y transition-opacity flex items-center self-stretch px-4 font-bold"
-                    data-link-name="Palermo"
-                    data-link-location="top-nav-level-1"
-                    role="menuitem"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span
-                      class="text-base block mt-1 pb-1 whitespace-nowrap nav-underline group-hover:nav-underline-selected group-focus:nav-underline-selected"
-                      >Palermo</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <div class="flex items-center justify-end gap-2 w-72 ml-5">
-            <div class="block">
-              <button
-                data-test-id="search-button-nav"
-                type="button"
-                class="group tw-1qj61c1 tw-ozwx86 flex-row after::absolute after::hidden after::pointer-events-none after::-left-1 after::-top-1 after::-right-1 after::-bottom-1 after::border-2 after::border-outline-invert after::rounded-sm focus-visible:after::block tw-10skrdm hidden xl:flex mx-3"
-                data-uds-child="search-trigger"
-              >
-                <div data-uds-child="icon" class="relative opacity-100">
-                  <svg
-                    data-uds-child="icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="tw-1q7uo4v tw-78qgvr w-[1em] h-[1em] tw-1h4nwdw tw-1jgcml9"
-                  >
-                    <use href="./search.svg#icon" xlink:href=""></use>
-                  </svg>
-                </div>
-                <div
-                  data-uds-child="text-label"
-                  aria-hidden="false"
-                  class="relative font-bold uppercase px-2 text-base"
-                >
-                  <div class="opacity-100">Search</div>
-                </div></button
-              ><button
-                data-test-id="search-icon-nav"
-                type="button"
-                class="group tw-wiulm1 tw-ozwx86 flex-row after::absolute after::hidden after::pointer-events-none after::-left-1 after::-top-1 after::-right-1 after::-bottom-1 after::border-2 after::border-outline-invert after::rounded-full focus-visible:after::block tw-10skrdm xl:hidden"
-                data-uds-child="search-trigger"
-              >
-                <div
-                  data-uds-child="icon"
-                  class="relative mr-0 ml-0 rtl:ml-0 rtl:mr-0 opacity-100"
-                >
-                  <svg
-                    data-uds-child="icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="tw-1q7uo4v tw-78qgvr w-[1em] h-[1em] tw-1h4nwdw tw-1jgcml9"
-                  >
-                    <use
-                      href="./search.svg#icon"
-                      xlink:href="/_next/static/assets/icons/search.svg#icon"
-                    ></use>
-                  </svg>
-                </div>
-                <div
-                  data-uds-child="text-label"
-                  aria-hidden="false"
-                  class="relative font-bold uppercase px-2 text-base sr-only !px-0"
-                >
-                  <div class="opacity-100">Search</div>
-                </div>
-              </button>
-            </div>
-            <div class="block">
-              <div class="relative" aria-hidden="true">
-                <a
-                  class="group tw-wiulm1 tw-ozwx86 flex-row after::absolute after::hidden after::pointer-events-none after::-left-1 after::-top-1 after::-right-1 after::-bottom-1 after::border-2 after::border-outline-invert after::rounded-full focus-visible:after::block tw-10skrdm"
-                  id="nav-wishlist-link"
-                  ><div
-                    data-uds-child="icon"
-                    class="relative mr-0 ml-0 rtl:ml-0 rtl:mr-0 opacity-100"
-                  >
-                    <svg
-                      data-uds-child="icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="tw-1q7uo4v tw-78qgvr w-[1em] h-[1em] tw-1h4nwdw tw-1jgcml9"
-                    >
-                      <use
-                        href="./heart.svg#icon"
-                        xlink:href="/_next/static/assets/icons/heart.svg#icon"
-                      ></use>
-                    </svg>
-                  </div>
-                  <div
-                    data-uds-child="text-label"
-                    aria-hidden="false"
-                    class="relative font-bold uppercase px-2 text-base sr-only !px-0"
-                  >
-                    <div class="opacity-100">Wishlist 0</div>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="relative">
-              <a
-                class="group tw-wiulm1 tw-ozwx86 flex-row after::absolute after::hidden after::pointer-events-none after::-left-1 after::-top-1 after::-right-1 after::-bottom-1 after::border-2 after::border-outline-invert after::rounded-full focus-visible:after::block tw-10skrdm relative"
-                id="nav-cart-link"
-                href="/in/en/cart"
-                data-test-id="nav-cart-link"
-                ><div
-                  data-uds-child="icon"
-                  class="relative mr-0 ml-0 rtl:ml-0 rtl:mr-0 opacity-100"
-                >
-                  <svg
-                    data-uds-child="icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="tw-1q7uo4v tw-78qgvr w-[1em] h-[1em] tw-1h4nwdw tw-1jgcml9"
-                  >
-                    <use
-                      href="./cart.svg#icon"
-                      xlink:href="/_next/static/assets/icons/cart.svg#icon"
-                    ></use>
-                  </svg>
-                </div>
-                <div
-                  data-uds-child="text-label"
-                  aria-hidden="false"
-                  class="relative font-bold uppercase px-2 text-base sr-only !px-0"
-                >
-                  <div class="opacity-100">Shopping Cart 0</div>
-                </div></a
-              >
-            </div>
-            <div class="relative">
-              <button
-                data-test-id="quicklinks-popout-trigger"
-                type="button"
-                class="group tw-wiulm1 tw-ozwx86 flex-row after::absolute after::hidden after::pointer-events-none after::-left-1 after::-top-1 after::-right-1 after::-bottom-1 after::border-2 after::border-outline-invert after::rounded-full focus-visible:after::block tw-10skrdm"
-                id="account-button"
-                aria-haspopup="dialog"
-                aria-expanded="false"
-                aria-controls="radix-0"
-                data-state="closed"
-                data-uds-child="popover-trigger"
-              >
-                <div
-                  data-uds-child="icon"
-                  class="relative mr-0 ml-0 rtl:ml-0 rtl:mr-0 opacity-100"
-                >
-                  <svg
-                    data-uds-child="icon"
-                    aria-hidden="true"
-                    focusable="false"
-                    class="tw-1q7uo4v tw-78qgvr w-[1em] h-[1em] tw-1h4nwdw tw-1jgcml9"
-                  >
-                    <use
-                      href="./person.svg#icon"
-                      xlink:href="/_next/static/assets/icons/person.svg#icon"
-                    ></use>
-                  </svg>
-                </div>
-                <div
-                  data-uds-child="text-label"
-                  aria-hidden="false"
-                  class="relative font-bold uppercase px-2 text-base sr-only !px-0"
-                >
-                  <div class="opacity-100">My account</div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <aside
-      aria-label="Second Promo Banner"
-      data-test-id="secondary-global-banner"
-      class=""
-    >
-      <section
-        data-link-loc="banner"
-        data-test-id="banner"
-        class="relative flex p-4 pb-5 overflow-hidden bg-[#414584] my-0 mx-[calc(50%-50vw)] hidden empty:hidden mobile:block tablet:block desktop:block"
-      >
-        <a
-          aria-disabled="false"
-          class="tw-hqslau tw-xbcb1y absolute inset-0 h-full w-full"
-          aria-hidden="true"
-          tabindex="-1"
-        ></a>
-        <div
-          class="relative m-auto flex flex-col items-center text-center text-[#ffffff]"
-        >
-          <div class="flex flex-col items-center">
-            <h2 class="mobile:mt-1 text-sm desktop:text-base font-bold">
-              EXTRA 15% OFF ON ORDERS ABOVE ₹3999*
-            </h2>
-          </div>
-          <div class="flex space-x-2 items-center">
-            <a aria-disabled="false" class="tw-6mqy4z tw-xbcb1y">FOR HIM</a
-            ><a aria-disabled="false" class="tw-6mqy4z tw-xbcb1y">FOR HER</a
-            ><a aria-disabled="false" class="tw-6mqy4z tw-xbcb1y">FOR KIDS</a>
-          </div>
-          <h3 class="text-xs mt-1">
-            Auto-applied at checkout | *Exclusions apply
+    <header>
+      <div>
+        <div>
+          <h3 class="intro">
+            SOLVE YOUR QUERIES FASTER THAN EVER! SEND US A 'HI' ON WHATSAPP AT
+            6364929121 <a href="#"><u>CLICK HERE</u></a>
           </h3>
         </div>
+        <div class="navbar">
+          <span class="pumacon">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+              height="35px"
+            />
+          </span>
+          <span>
+            <ul class="list">
+              <li class="listclass">New</li>
+              <li class="listclass">Women</li>
+              <li class="listclass">Women</li>
+              <li class="listclass">Men</li>
+              <li class="listclass">Kids</li>
+              <li class="listclass">Motorsport</li>
+              <li class="listclass">Collaboration</li>
+              <li class="listclass">Sport</li>
+              <li class="listclass">Sale</li>
+              <li class="listclass">Palermo</li>
+            </ul>
+          </span>
+          <div class="searchbox">
+            <input type="text" placeholder="Search" />
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/heart.svg#icon"
+              height="25"
+              alt="Wishlist"
+            />
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/cart.svg#icon"
+              height="25"
+              alt="cart"
+            />
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/person.svg#icon"
+              height="25"
+              alt="Profile"
+            />
+          </div>
+        </div>
+        <div class="ad-container">
+          <div>
+            <h3>EXTRA 15% OFF ON ORDERS ABOVE ₹3999*</h3>
+            <h4>
+              <a href="#"><u>FOR HIM</u></a> <a href="#"><u>FOR HER</u></a>
+              <a href="#"><u>FOR KIDS</u></a>
+            </h4>
+            <h5>Auto-applied at checkout | *Exclusions apply</h5>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="banner">
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="banner_content">
+          <h1>NEW ARRIVALS</h1>
+          <h3>WORN BY VIRAT KOHLI</h3>
+          <div class="btn_cont">
+            <a href=""><button>SHOP NOW</button></a>
+            <a href=""><button>CURATED LOOKS</button></a>
+          </div>
+        </div>
       </section>
-    </aside>
-
-    <main id="puma-skip-here" class="flex-grow">
-      <div
-        class="box-border flex flex-col mobile:space-y-4 tablet:space-y-6 desktop:space-y-8 mobile:p-4 tablet:p-6 desktop:p-8 max-w-screen-3xl mx-auto font-display relative"
-      >
-        <div
-          data-test-id="sanity-content-slot"
-          class="flex flex-col gap-6 md:gap-8 lg:gap-10 tw-u6zwsp tw-10ptkxm"
-          data-document="CategoryPage-IN-root"
-        >
-          <div
-            id="slots-0"
-            data-id="0f40bcc3-cd78-40bd-8e23-42b568678aba"
-            data-type="FullBleedHero"
-            class="hidden empty:hidden mobile:block tablet:block desktop:block"
-          >
-            <div
-              class="relative w-full w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] px-0 sm:px-0"
-              data-bleed="true"
-              data-test-id="full-bleed-hero-container"
-            >
-              <a
-                aria-disabled="false"
-                data-link-loc="banner"
-                class="tw-hqslau tw-xbcb1y bg-[null] relative flex items-center justify-start inset-0 w-full aspect-6000-2167 mobile:relative mobile:flex-col mobile:items-center mobile:justify-center mobile:w-full mobile:aspect-3200-3200"
-                aria-hidden="true"
-                tag="section"
-                href="/in/en/new-season"
-              >
-                <div
-                  class="absolute top-0 left-0 w-full h-full mobile:relative"
-                >
-                  <picture
-                    data-test-id="sanity-image"
-                    class="flex bg-puma-black-800 pointer-events-none w-full absolute inset-0 h-full"
-                    style="
-                      background-image: url('data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAQFB//EACAQAAEDBAIDAAAAAAAAAAAAAAEAAgMEBRESBhMUMZL/xAAVAQEBAAAAAAAAAAAAAAAAAAADBv/EABsRAQACAwEBAAAAAAAAAAAAAAEAAgMEIRMU/9oADAMBAAIRAxEAPwDG4uH3TIOsf2FeeJdqCgDI443PJwMuGERTxsWzXC4MsnUprY7WxqMgTWGsmf2dTAT7GwRESe9jkP5cb1n/2Q==');
-                      background-size: cover;
-                    "
-                    ><source
-                      data-test-id="sanity-image-source"
-                      srcset="
-                        https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0
-                      "
-                      media="(min-width: 2561px)" />
-                    <source
-                      data-test-id="sanity-image-source"
-                      srcset="
-                        https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2560/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0
-                      "
-                      media="(1921px <= width <= 2560px)" />
-                    <source
-                      data-test-id="sanity-image-source"
-                      srcset="
-                        https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0
-                      "
-                      media="(1281px <= width <= 1920px)" />
-                    <source
-                      data-test-id="sanity-image-source"
-                      srcset="
-                        https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1280/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0
-                      "
-                      media="(855px <= width <= 1280px)" />
-                    <source
-                      data-test-id="sanity-image-source"
-                      srcset="
-                        https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0
-                      "
-                      media="(541px <= width <= 854px)" />
-                    <source
-                      data-test-id="sanity-image-source"
-                      srcset="
-                        https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/02dd5c666a08c62fc22edce3f13b866599d97094?_a=BAMCkGfi0
-                      "
-                      media="(max-width: 540px)" />
-                    <img
-                      data-test-id="sanity-image-element"
-                      srcset="
-                        data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
-                      "
-                      class="object-cover w-full h-full"
-                      loading="eager"
-                      decoding="auto"
-                  /></picture>
-                </div>
-
-                <div
-                  class="relative p-6 xl:p-16 flex flex-col text-center items-center text-[#ffffff]"
-                >
-                  <span
-                    class="heading-base tw-ou8532 tw-1n7poqb tw-1h4nwdw tw-1jgcml9"
-                    data-uds-child="heading"
-                  >
-                    <h1
-                      class="font-bold leading-tight mobile:text-2xl tablet:text-3xl desktop:text-4xl xl:text-5xl"
-                    >
-                      NEW ARRIVALS
-                    </h1>
-                  </span>
-                  <p class="">WORN BY VIRAT KOHLI</p>
-
-                  <div
-                    class="flex flex-wrap flex-gap-2 xs:flex-gap-4 mt-6 justify-center md:justify-center"
-                  >
-                    <a
-                      aria-disabled="false"
-                      data-test-id="call-to-action"
-                      class="tw-1ve6rre tw-100cf5d pointer-events-auto whitespace-normal"
-                      >SHOP NOW</a
-                    >
-                    <a
-                      aria-disabled="false"
-                      data-test-id="call-to-action"
-                      class="tw-1ve6rre tw-100cf5d pointer-events-auto whitespace-normal"
-                      >CURATED LOOKS</a
-                    >
-                  </div>
-                </div>
-
-                
-              </a>
+      <section id="banner">
+        <div class="banner">
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2880/cms/images/f5eaefeafb5a5ff5ca2d77b22f6b7653aed842da?_a=BAMCkGfi0"
+            alt="orange-label"
+          />
+          <div class="banner_content2">
+            <h1>LOWEST PRICE OF THE YEAR</h1>
+            <h3>ITS NOW OR NEVER KINDA DEAL</h3>
+            <div class="btn_cont">
+              <a href=""><button>SHOP NOW</button></a>
             </div>
           </div>
-         
-        
         </div>
-          
+      </section>
+      <section>
+        <div class="video-section">
+          <div class="banner_content3">
+            <h1>PALERMO</h1>
+            <h3>REWRITE THE CLASSICS</h3>
+          </div>
+          <div class="btn_cont">
+            <a href=""><button>SHOP NOW</button></a>
+            <a href=""><button>EXPLORE STYLE GUIDE</button></a>
+          </div>
+          <div class="palermo">
+            <img
+              src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_3200/cms/images/45adb00438bd290f62f1146b0792436e60087fe4?_a=BAMCkGfi0"
+              alt="palermo"
+            />
+          </div>
+          <div>
+            <video
+              class="video"
+              autoplay
+              loop
+              controlslist="nodownload"
+              muted
+              height="545"
+            >
+              <source
+                src="https://cdn.sanity.io/files/qa41whrn/prod/2269b9809fbb0cc903469eabd884b3de0ac70c80.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </section>
+      <div class="caption1">
+        <h1>PALERMO PLAYBOOK</h1>
+        <p>Style 'em your way, every day</p>
       </div>
-      
+      <section class="image-container">
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/a0baeb671b2d2521b0fb92aced51edbc451c5718?_a=BAMAH2fi0"
+            alt=""
+          />
+          <div class="image-caption">
+            <h2>STREETWEAR STAPLE</h2>
+            <div class="btn_cont">
+              <a href=""><button>SHOP NOW</button></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/faa9d6bbc65cf26709372d27ce9ba2884708c84b?_a=BAMAH2fi0"
+            alt=""
+          />
+          <div class="image-caption">
+            <h2>NIGHTOUT LOOKS</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/8adef940f580b6559e730b05954bbedfb1491822?_a=BAMAH2fi0"
+            alt=""
+          />
+          <div class="image-caption">
+            <h2>PLAYFUL OUTINGS</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/ef2d5db96e29d8ad45056fb19c0ce3aedd545d56?_a=BAMAH2fi0"
+            alt=""
+          />
+          <div class="image-caption">
+            <h2>THE FESTIVE EDITS</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </section>
+      <section id="banner1">
+        <div class="banner1">
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/c7e563093ce8968cf56a0dbabc3aed8e6003eec0?_a=BAMAH2fi0"
+            alt=""
+          />
+          <div class="banner_content3">
+            <h1>FENTI x PUMA</h1>
+            <h3>THE AVANTI BY RIHANNA</h3>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </section>
+      <section id="banner2">
+        <div class="banner2">
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/a2d888ff2d01d208b66a4af9fe8edfde53b1e119?_a=BAMCkGfi0"
+            alt=""
+          />
+        </div>
+        <div class="banner_content4">
+          <h1>A$AP ROCKY x PUMA</h1>
+          <h3>DROPPING NOVEMBER 7</h3>
+          <button>EXPLORE COLLECTION</button>
+          <button>SIGNUP NOW</button>
+        </div>
+      </section>
+      <section class="image-container2">
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/71ce7729f8f7da8c0cfc20e78b9839d4d8257a84?_a=BAMAH2fi0"
+            alt=""
+          />
+          <div class="image-caption2">
+            <h1>MB.04 1LOVE</h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/c3a9a7cca38afda7c4bbadf678c3afe427b810eb?_a=BAMAGSfi0"
+            alt=""
+          />
+          <div class="image-caption2">
+            <h1>DEVIATE 3 MARATHON SERIES</h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/73e7d6229af3b731a2b96be73b85a7542c4e8a0f?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="image-caption2">
+            <h1>SOFTRIDE</h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/523938f36eac15a14d2e66cdb263176adf2ab6ac?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="image-caption2">
+            <h1>LIGHTS OUT PACK</h1>
+          </div>
+        </div>
+      </section>
+      <div class="caption2">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+      <section class="image-container">
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_985/cms/images/3e1c0c46b05ee435b4c9c62edfcb05d1e0354c35?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="image-caption">
+            <h2>PUMA SPEEDCAT</h2>
+            <div class="btn_cont">
+              <a href=""><button>SHOP NOW</button></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/778bd977f339b8f3131ea841cb8aa3a64d42f843?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div>
+            <h2>WINTERWEAR</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/3b5200bdc44bb743647a0c3e844c5b6d4e1cb322?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div>
+            <h2>PUMA X LMC</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/ec207a61f3354932669ae8bdbea08136658ad48d?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="image-caption">
+            <h2>THE SCRIBBLE PACK</h2>
+            <div>
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner3">
+        <div class="banner3">
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/953b99043fc3ec28d0f78a56167e739a51d6afc8?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="banner_content3">
+            <h1>PUMA x one8</h1>
+            <h3>EFFORTLESS STYLE</h3>
+            <div class="btn_cont">
+               <a href=""><button>SHOP NOW</button></a> 
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <div class="caption3">
+        <h1>NEW SEASON. NEW THREADS.</h1>
+      </div>
+      <section class="image-container3">
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/55fa220918d3bdc7d4b7d948d8630c0bba97b852?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="image-caption3">
+            <h1>HARYANA STEELERS HOME JERSEY</h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/1a8aab4395a2f8b7fccf58ff6d1602f12b8622a6?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="image-caption3">
+            <h1>HARYANA STEELERS AWAY JERSEY</h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_626/cms/images/423ce1c3734ef6f658e01d41e2771492ebd5661e?_a=BAMAGSfi0"
+            alt=""
+          />
+          <div class="image-caption3">
+            <h1>MUMBAI CITY FC HOMEKIT</h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/c2f5a7d0b5024fb87187dc23084a91bd7cd6ad04?_a=BAMAGSfi0"
+            alt=""
+          />
+          <div class="image-caption3">
+            <h1>BENGALURU FC AWAY KIT</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner3">
+        <div class="banner3">
+          <img
+            src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/21e926883273ea2f81973344ac8fdd4174716bd5?_a=BAMCkGfi0"
+            alt=""
+          />
+          <div class="banner_content5">
+            <h1>MMQ SPORT</h1>
+            <h3>SPORT SOPHISTICATION</h3>
+            <div class="btn_cont">
+                <a href=""><button>SHOP NOW</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+
+    <footer class="footer">
+      <div class="footer-heading">
+        <h1>SUPPORT</h1>
+        <ul>
+          <li class="listclass">Contact Us</li>
+          <li class="listclass">Promotion & Sale</li>
+          <li class="listclass">Track Order</li>
+          <li class="listclass">Shoe Care</li>
+          <li class="listclass">Tech Glossary</li>
+          <li class="listclass">Initiate Return / Exchange</li>
+          <li class="listclass">Cookie Setting</li>
+        </ul>
+    </div>
+      <div class="footer-cont">
+        <ul>
+          <li class="listclass">FAQs</li>
+          <li class="listclass">My Account</li>
+          <li class="listclass">Exchange & Return Policy</li>
+          <li class="listclass">Privacy Policy</li>
+          <li class="listclass">Terms & Condition</li>
+          <li class="listclass">Sneaker</li>
+        </ul>
+      </div>
+      <div class="footer-cont1">
+        <h1>ABOUT</h1>
+        <ul class="about">
+          <li class="listclass">Company</li>
+          <li class="listclass">Corporate News</li>
+          <li class="listclass">Press Center</li>
+          <li class="listclass">Investors</li>
+          <li class="listclass">Sustainability</li>
+          <li class="listclass">Careers</li>
+          <li class="listclass">Store Locator</li>
+          <li class="listclass">PUMA Articles</li>
+        </ul>
+      </div>
+      <div class="footer-cont2">
+        <h1>STAY UP TO DATE</h1>
+        <ul class="list">
+          <li>
+            <img src="https://in.puma.com/_next/static/assets/icons/social-x.svg#icon" alt="">
+          </li>
+          <li>
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/social-x.svg#icon"
+              alt="x"
+              height="25"
+            />
+          </li>
+          <li>
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/social-pinterest.svg#icon"
+              alt="pintrest"
+              height="25"
+            />
+          </li>
+          <li>
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/social-instagram.svg#icon"
+              alt="instagram"
+              height="25"
+            />
+          </li>
+          <li>
+            <img
+              src="https://in.puma.com/_next/static/assets/icons/social-facebook.svg#icon"
+              alt="facebook"
+              height="25"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="footer-cont3">
+        <h1>EXPLORE</h1>
+        <ul>
+          <li>
+            <button>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/puma-app.svg#icon"
+                alt=""
+                height="40"
+              />
+            </button>
+          </li>
+          <li>
+            <button>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/puma-trac.svg#icon"
+                alt=""
+                height="40"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <hr class="line">
+      <div>
+        <div>
+          <ul class="list">
+            <li>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/payment-visa.svg#icon"
+                alt="Visa"
+                height="20"
+              />
+            </li>
+            <li>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/payment-mastercard.svg#icon"
+                alt="mastercard"
+                height="20"
+              />
+            </li>
+            <li>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/payment-maestro.svg#icon"
+                alt="Maestro"
+                height="20"
+              />
+            </li>
+            <li>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/payment-amex.svg#icon"
+                alt="AMEX"
+                height="20"
+              />
+            </li>
+            <li>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/payment-upi.svg#icon"
+                alt="UPI"
+                height="20"
+              />
+            </li>
+            <li>
+              <img
+                src="https://in.puma.com/_next/static/assets/icons/payment-rupay.svg#icon"
+                alt="Rupay"
+                height="20"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <!-- <div class="india-button">
+          <button>
+            <a href="#"
+              ><img
+                src="https://in.puma.com/_next/static/assets/icons/flag-in.svg#icon"
+                alt=""
+                height="25"
+            /></a>
+            <h2>INDIA</h2>
+          </button>
+        </div> -->
+      </div>
+      <div>
+        <div class="last-footer">
+          <h4>© PUMA India Ltd, 2024. All Rights Reserved.</h4>
+          <h5><u>Imprint and Legal Data</u></h5>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
