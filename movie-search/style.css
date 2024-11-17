@@ -1,0 +1,121 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f9a825;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #f9a825;
+  width: 300px;
+  outline: none;
+  background: #333;
+  color: #fff;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 8px #f9a825;
+}
+
+.refresh-btn {
+  background-color: #f9a825;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #1c1c1c;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #d68806;
+}
+
+/* Gallery Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Fixed three columns */
+  gap: 20px; /* Space between items */
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Image Styles */
+.gallery img {
+  width: 100%; /* Ensure the image fills its container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Behavior */
+@media (max-width: 992px) {
+  .gallery {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+      grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f9a825;
+  text-decoration: none;
+  font-weight: bold;
+}
